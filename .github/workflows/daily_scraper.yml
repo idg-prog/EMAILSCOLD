@@ -2,9 +2,7 @@ name: Daily UAE Lead Scraper
 
 on:
   schedule:
-    # Runs automatically every day at 06:00 UTC (10:00 AM UAE Time)
     - cron: '0 2 * * *'
-  # Allows manually triggering the run from the GitHub Actions UI anytime
   workflow_dispatch:
 
 jobs:
@@ -23,7 +21,7 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install google-search-results pandas requests beautifulsoup4 openpyxl
+          pip install serpapi pandas requests beautifulsoup4 openpyxl
 
       - name: Execute Scraper Script
         env:
