@@ -38,7 +38,7 @@ HEADERS = {
 # 2. DAILY KEYWORD ROTATION LOGIC
 # ==========================================
 # Rotation start date: September 20, 2026
-START_DATE = datetime.date(2026, 9, 19)
+START_DATE = datetime.date(2026, 9, 20)
 today = datetime.date.today()
 
 days_elapsed = (today - START_DATE).days
